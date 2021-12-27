@@ -1,0 +1,79 @@
+section.features {
+    padding: 0px 0px 10vh 0px;
+}
+.features {
+    background-color: #ffe5db;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("") center center fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.features h1 {
+    padding: 35vh 80px 0px 80px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #d0372c;
+
+    /* -webkit-animation: flyIn 2s, fade 2s;
+    animation: flyIn 2s, fade 2s; */
+}
+.features em {
+    padding: 0px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #56423e;
+}
+.features h2 {
+    padding: 16px 25% 0 80px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 120%;
+    text-transform: none;
+    color: #56423e;
+    -webkit-animation: fade 2s;
+    animation: fade 2s;
+}
+
+.features h3 {
+    padding: 16px 10% 50px 80px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: none;
+    color: #000000;
+}
+
+.features .card {
+    margin-bottom: 30px;
+}
+
+.features-link {
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    position: inherit;
+    opacity: 0.5;
+    z-index: -1;
+    text-transform: lowercase;
+    width: 80px;
+    display: contents;
+    color: #d0372c;
+}
+
+.features-link:hover {
+    color: #d0372c;
+}

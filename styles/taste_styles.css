@@ -1,0 +1,116 @@
+section.taste {
+    padding: 10vh;
+}
+
+.taste {
+    background-color: #56423e;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("") center center fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.taste .card-body {
+    height: 530px;
+    overflow: auto;
+}
+
+.taste h1 {
+    /* padding: 10vh 80px 0px 80px; */
+    padding-top: 25vh;
+    padding-left: 0px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #d0372c;
+
+    /* -webkit-animation: flyIn 2s, fade 2s;
+    animation: flyIn 2s, fade 2s; */
+}
+.taste em {
+    padding: 0px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.taste h2 {
+    /* padding: 16px 25% 0 80px; */
+    padding-left: 0px;
+    max-width: 900px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 120%;
+    text-transform: none;
+    color: #fff;
+    -webkit-animation: fade 2s;
+    animation: fade 2s;
+}
+.taste h3 {
+    padding: 16px 10% 50px 80px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: none;
+    color: #fff;
+    -webkit-animation: fade 2s;
+    animation: fade 2s;
+}
+
+.taste p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+    -webkit-animation: fade 2s;
+    animation: fade 2s;
+}
+
+.taste .food-menu .menu-card-img-top {
+    max-height: 120px;
+    background: url("../images/food-img1-resized-min.jpeg") center center;
+    height: 150px;
+}
+
+.taste .food-menu .menu-card-img-top.card2 {
+    background-image: url("../images/food-img2-resized-min.jpeg");
+}
+
+.taste ::selection {
+    color: #000;
+    background: #e7e7b1;
+}
+
+.taste .schedule h3 {
+    color: #56423e;
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    border-bottom: 1px solid #56423e;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.taste .schedule .time {
+    background-color: #ffe5db; /*#56423e;*/
+    font-size: 0.625rem;
+    line-height: 0.9375rem;
+    padding: 8px 10px 7px;
+    border-radius: 3px;
+    opacity: 0.98;
+    color: #56423e;
+    width: max-content;
+}

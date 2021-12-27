@@ -1,0 +1,105 @@
+section.contact {
+    padding: 0px 0px 10vh 0px;
+}
+.contact {
+    background-color: #56423e;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("") center center fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.contact h1 {
+    padding: 35vh 80px 0px 80px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #d0372c;
+
+    -webkit-animation: flyIn 2s, fade 2s;
+    animation: flyIn 2s, fade 2s;
+}
+.contact em {
+    padding: 0px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.contact h2 {
+    padding: 10vh 25% 0 80px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: none;
+    color: #fff;
+    -webkit-animation: fade 2s;
+    animation: fade 2s;
+}
+.contact h3 {
+    padding: 16px 10% 50px 80px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: none;
+    color: #fff;
+    -webkit-animation: fade 2s;
+    animation: fade 2s;
+}
+
+.contact h4 {
+    padding: 45px 40px 20px 0px;
+    margin-top: 20px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    width: 1000px;
+    justify-content: center;
+
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #d0372c;
+}
+
+#contactEmailc {
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    position: inherit;
+    opacity: 0.5;
+    z-index: -1;
+    text-transform: lowercase;
+    width: 80px;
+    display: contents;
+    color: #d0372c;
+}
+
+.contact label {
+    color: white;
+}
+
+.contact div .row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contact .table > :not(:first-child) {
+    border-top: 0px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .contact h2 {
+        font-size: 24px;
+    }
+}

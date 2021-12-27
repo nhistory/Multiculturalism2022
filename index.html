@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Celebrate Multiculturalism 2022</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/about_styles.css" />
+        <link rel="stylesheet" href="./styles/features_styles.css" />
+        <link rel="stylesheet" href="./styles/taste_styles.css" />
+        <link rel="stylesheet" href="./styles/volunteering_styles.css" />
+        <link rel="stylesheet" href="./styles/contact_styles.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            function navClickAbout() {
+                let navAbout = document.getElementById("nav-about");
+                let navAboutEx = document.querySelectorAll(
+                    "#nav-feature, #nav-taste, #nav-volunteering, #nav-contact"
+                );
+                navAbout.classList.add(
+                    "fw-bold",
+                    "text-light",
+                    "disabled-link"
+                );
+                for (let i = 0; i < navAboutEx.length; i++) {
+                    navAboutEx[i].classList.remove(
+                        "fw-bold",
+                        "text-light",
+                        "disabled-link"
+                    );
+                }
+            }
+            function navClickFeature() {
+                let navAbout = document.getElementById("nav-feature");
+                let navAboutEx = document.querySelectorAll(
+                    "#nav-about, #nav-taste, #nav-volunteering, #nav-contact"
+                );
+                navAbout.classList.add(
+                    "fw-bold",
+                    "text-light",
+                    "disabled-link"
+                );
+                for (let i = 0; i < navAboutEx.length; i++) {
+                    navAboutEx[i].classList.remove(
+                        "fw-bold",
+                        "text-light",
+                        "disabled-link"
+                    );
+                }
+            }
+            function navClickTaste() {
+                let navAbout = document.getElementById("nav-taste");
+                let navAboutEx = document.querySelectorAll(
+                    "#nav-about, #nav-feature, #nav-volunteering, #nav-contact"
+                );
+                navAbout.classList.add(
+                    "fw-bold",
+                    "text-light",
+                    "disabled-link"
+                );
+                for (let i = 0; i < navAboutEx.length; i++) {
+                    navAboutEx[i].classList.remove(
+                        "fw-bold",
+                        "text-light",
+                        "disabled-link"
+                    );
+                }
+            }
+            function navClickVolunteering() {
+                let navAbout = document.getElementById("nav-volunteering");
+                let navAboutEx = document.querySelectorAll(
+                    "#nav-about, #nav-feature, #nav-taste, #nav-contact"
+                );
+                navAbout.classList.add(
+                    "fw-bold",
+                    "text-light",
+                    "disabled-link"
+                );
+                for (let i = 0; i < navAboutEx.length; i++) {
+                    navAboutEx[i].classList.remove(
+                        "fw-bold",
+                        "text-light",
+                        "disabled-link"
+                    );
+                }
+            }
+            function navClickContact() {
+                let navAbout = document.getElementById("nav-contact");
+                let navAboutEx = document.querySelectorAll(
+                    "#nav-about, #nav-feature, #nav-taste, #nav-volunteering"
+                );
+                navAbout.classList.add(
+                    "fw-bold",
+                    "text-light",
+                    "disabled-link"
+                );
+                for (let i = 0; i < navAboutEx.length; i++) {
+                    navAboutEx[i].classList.remove(
+                        "fw-bold",
+                        "text-light",
+                        "disabled-link"
+                    );
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="page-container">
+            <nav
+                class="navbar fixed-top navbar-expand-md navbar-dark"
+                style="background-color: rgba(0, 0, 0, 0.5)"
+            >
+                <div class="container-fluid">
+                    <button
+                        class="navbar-toggler m-2"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a
+                                    onclick="navClickAbout()"
+                                    id="nav-about"
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="#about"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    onclick="navClickFeature()"
+                                    id="nav-feature"
+                                    class="nav-link"
+                                    href="#features"
+                                    >Features</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    onclick="navClickTaste()"
+                                    id="nav-taste"
+                                    class="nav-link"
+                                    href="#taste"
+                                    >Taste</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    onclick="navClickVolunteering()"
+                                    id="nav-volunteering"
+                                    class="nav-link"
+                                    href="#volunteering"
+                                    >Volunteering</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    onclick="navClickContact()"
+                                    id="nav-contact"
+                                    class="nav-link"
+                                    href="#contact"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="section index">
+                <div class="container-fluid">
+                    <h1>Celebrate Multiculturalism 2022</h1>
+                    <h2>International Food Festival</h2>
+                    <h3>August 10th to 14th</h3>
+                </div>
+            </section>
+
+            <!-- about section -->
+            <section id="about" class="section about">
+                <div class="container-fluid">
+                    <h1>About us</h1>
+                    <h2>
+                        Celebrate multiculturalism was established in 1982 and
+                        has been running an annual international food festival
+                        in Victoria Park ever since. The international food
+                        festival is especially fitting for Truro – owing to the
+                        numerous ethnicities that make up Truro’s population –
+                        and always draws a large crowd. Last year, 30 000 Nova
+                        Scotians visited our “Bahamas Mama” festival between
+                        August 5th and 9th: our largest crowd yet. This year, we
+                        are hoping to draw even larger numbers with our cultural
+                        focus on New Zealand. Our theme will be “I’ve been
+                        Kiwied!” and the festival will feature eight traditional
+                        New Zealand recipes, ten New Zealand bands (from folk
+                        music to rock music) and several displays featuring
+                        traditional artwork and crafts. This, of course, will be
+                        in addition to the hundreds of other food exhibits, art
+                        displays and musical/dance acts that we already have
+                        lined up for the festival. Our chairperson, Chloe
+                        Malone, is excited about this year’s festival: she
+                        believes that this year’s festival will be our most
+                        successful yet.
+                    </h2>
+                    <h3>Let’s hope for good weather 😊</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4>When & Cost</h4>
+                            <table>
+                                <tr>
+                                    <td class="columnOne">Theme:</td>
+                                    <td class="columnTheme">
+                                        I’ve been kiwied!! The Tastes of New
+                                        Zealand
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="columnOne">When:</td>
+                                    <td class="columnTwo">
+                                        Thursday, August 10th to Monday August
+                                        14th
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="columnOne">Where:</td>
+                                    <td class="columnTwo">
+                                        Victoria Park, Truro, Nova Scotia
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="columnOne">Cost:</td>
+                                    <td>Adult - $5</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>Senior - $4</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>Student (5 -18) - $3*</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>Child (under 5) - free</td>
+                                </tr>
+                            </table>
+                            <h5>
+                                * University/College students valid ID’s will be
+                                charged $3. If no ID is produced to prove your
+                                age or your attendance in a post-secondary
+                                institution, then you will be charged the adult
+                                rate.
+                            </h5>
+                            <h4>Hours</h4>
+                            <table class="second-table">
+                                <tr>
+                                    <td class="date">Thursday, August 10th</td>
+                                    <td class="time">6pm - 11pm</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">Friday, August 11th</td>
+                                    <td class="time">12pm - 11pm</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">Saturday, August 12th</td>
+                                    <td class="time">12pm - 11pm</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">Sunday, August 13th</td>
+                                    <td class="time">1pm - 6pm</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">Monday, August 14th</td>
+                                    <td class="time">1pm - 5pm</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="./images/about-food.jpg" alt="food" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- features section -->
+            <section id="features" class="section features">
+                <div class="container-fluid">
+                    <div class="col-md-9 mb-5">
+                        <h1>Multicultural Feature</h1>
+                        <h2>The Tastes of New Zealand</h2>
+                        <h3>
+                            These are some of the traditional New Zealand
+                            recipes that Celebrate multiculturalism will feature
+                            at this year’s festival. Try your hand at one of
+                            these favourites!
+                        </h3>
+                    </div>
+                </div>
+                <div class="container mb-5 pb-5">
+                    <h4><i class="bi bi-stars"></i> New Zealand Pavlova</h4>
+                    <i>Recipe By:</i>&nbsp;<b>Cari Heppell</b>
+                    <p>
+                        "This dessert is absolutely gorgeous! It is easy to
+                        make, and simply heaven! Use different fruit
+                        combinations for variety - strawberries and blueberries,
+                        kiwi and raspberries, nectarines and bananas - anything
+                        goes."
+                    </p>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ingredients</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            3 egg whites
+                                        </li>
+                                        <li class="list-group-item">
+                                            1/3 cup super fine sugar
+                                        </li>
+                                        <li class="list-group-item">
+                                            1 teaspoon distilled white vinegar
+                                        </li>
+                                        <li class="list-group-item">
+                                            1 tablespoon boiling water
+                                        </li>
+                                        <li class="list-group-item">
+                                            2 cups heavy whipping cream
+                                        </li>
+                                        <li class="list-group-item">
+                                            1/4 cup confectioners' sugar
+                                        </li>
+                                        <li class="list-group-item">
+                                            1 teaspoon vanilla extract
+                                        </li>
+                                        <li class="list-group-item">
+                                            2 cups sliced fresh fruit
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>Directions</h5>
+                            <p>
+                                Preheat oven to 475 degrees F (245 degrees C).
+                                Cover a baking sheet with foil, and spray
+                                lightly with cooking spray.
+                            </p>
+                            <p>
+                                In a large bowl, beat the egg whites to form
+                                stiff peaks. Add white sugar slowly, and
+                                continue beating. When egg whites are very
+                                stiff, add vinegar and boiling water. Continue
+                                beating until glossy surface is beginning to
+                                fade, and mixture is very stiff. Pile meringue
+                                onto prepared baking sheet. Shape into a circle
+                                1 1/2 inches thick. Form a slight dip in the
+                                center, and make the sides slightly higher.
+                            </p>
+                            <p>
+                                Place meringue in the oven, shut the door, and
+                                turn the heat off. Leave in the oven for one
+                                hour. Check the texture of the meringue; it
+                                should be hard with no soft spots. If soft in
+                                the center, heat oven to 250 degrees F (120
+                                degrees C). Place meringue back into the oven,
+                                and turn off the heat. Cool when done. Transfer
+                                onto a serving platter.
+                            </p>
+                            <p>
+                                Whip the cream until just stiff. Beat in vanilla
+                                and confectioners' sugar. Pile the whipped cream
+                                onto the meringue. Arrange the fruit on top of
+                                the whipped cream, and serve. Recipe can be
+                                found at:
+                                <a
+                                    href="http://allrecipes.com/recipe/12249/new-zealand-pavlova/"
+                                    class="features-link"
+                                    >LINK</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mb-5 pb-5">
+                    <h4>
+                        <i class="bi bi-stars"></i> Dad's New Zealand Mince Stew
+                    </h4>
+                    <i>Recipe By:</i>&nbsp;<b>Kat</b>
+                    <p>
+                        "Hmmmmm... I'm not sure if it's chili, or stew or a
+                        shepherds pie without the crust, but there is nothing
+                        like it over some toast on a cold night, rich and
+                        hearty, just downright yummy if you ask me. We always
+                        experiment a little with our ingredients but it always
+                        comes out great. I'm thinking of going and making a pot
+                        right now, oh and it's even better the days after you
+                        make it, just go ahead and microwave some, put it on
+                        baked potatoes, roll it up in bread, use it anyway you
+                        like."
+                    </p>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ingredients</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            1 tablespoon vegetable oil
+                                        </li>
+                                        <li class="list-group-item">
+                                            3 large onions, sliced
+                                        </li>
+                                        <li class="list-group-item">
+                                            2 pounds ground beef
+                                        </li>
+                                        <li class="list-group-item">
+                                            2 cloves garlic, chopped
+                                        </li>
+                                        <li class="list-group-item">
+                                            1 cup water
+                                        </li>
+                                        <li class="list-group-item">
+                                            2 cups ketchup
+                                        </li>
+                                        <li class="list-group-item">
+                                            1 cup beef stock
+                                        </li>
+                                        <li class="list-group-item">
+                                            2 tablespoons teriyaki sauce
+                                        </li>
+                                        <li class="list-group-item">
+                                            3 tablespoons black pepper
+                                        </li>
+                                        <li class="list-group-item">
+                                            1 tablespoon curry powder
+                                        </li>
+                                        <li class="list-group-item">
+                                            1 tablespoon all-purpose flour
+                                        </li>
+                                        <li class="list-group-item">
+                                            1/2 cup water
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>Directions</h5>
+                            <p>
+                                Heat oil in a large pot over medium heat. Saute
+                                onions until browned; remove from pot, and set
+                                aside. Add ground beef to pot, and cook until
+                                evenly brown. Add garlic, and cook for 2
+                                minutes. Stir in browned onions, and cook on
+                                high heat for 3 to 5 minutes. Stir in 1 cup of
+                                water. Reduce heat, cover, and simmer for 20
+                                minutes.
+                            </p>
+                            <p>
+                                Stir in ketchup, beef stock, and teriyaki sauce.
+                                Season with pepper, curry powder, garlic powder,
+                                and onion powder. Cover, and simmer for about 2
+                                hours.
+                            </p>
+                            <p>
+                                Mix together 1 tablespoon flour and 1/2 cup
+                                water. Stir into stew, and cook until thickened.
+                            </p>
+                            <p>
+                                Recipe can be found at:
+                                <a
+                                    href="http://allrecipes.com/recipe/49560/dads-new-zealand-mince-stew/"
+                                    class="features-link"
+                                    >LINK</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mb-5 pb-5">
+                    <h4>
+                        <i class="bi bi-stars"></i> Other feature recipes
+                        include:
+                    </h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>
+                                <span class="features-link">ANZAC biscuits</span
+                                >(April feature)
+                            </p>
+                            <p>
+                                <span class="features-link">Kumara soup</span
+                                >(April feature)
+                            </p>
+                            <p>
+                                <span class="features-link"
+                                    >Blackberry bread pudding </span
+                                >(May feature)
+                            </p>
+                            <p>
+                                <span class="features-link"
+                                    >Macaroni cheese bake </span
+                                >(May feature)
+                            </p>
+                            <p>
+                                <span class="features-link">Cheese pies </span
+                                >(June feature)
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>
+                                <span class="features-link"
+                                    >Tararura biscuits </span
+                                >(June feature)
+                            </p>
+                            <p>
+                                <span class="features-link"
+                                    >Afghan biscuits </span
+                                >(July feature)
+                            </p>
+                            <p>
+                                <span class="features-link"
+                                    >Cervena (venison) ragout</span
+                                >(July feature)
+                            </p>
+                            <p>
+                                <span class="features-link">Kumara salad</span
+                                >(August feature)
+                            </p>
+                            <p>
+                                <span class="features-link">Ginger beer</span
+                                >(August feature)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- taste section -->
+            <section id="taste" class="section taste">
+                <div class="container-fluid">
+                    <div class="col-md-9 mb-5">
+                        <h1>The tastes and sounds of multiculturalism</h1>
+                        <h2>Celebrate multiculturalism was established</h2>
+                        <!-- <h3>Let’s hope for good weather</h3> -->
+
+                        <p class="brief">
+                            Please join us for this great Celebrate
+                            multiculturalism tradition. Each year we try to fill
+                            our festival with the sounds and tastes from around
+                            the globe. While most exhibits are generally places
+                            strategically throughout the park, the stage is
+                            placed right in the centre of the park, to the right
+                            of the beer tent. Come down for a pint and a good
+                            song or two.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Menu Section -->
+                <div class="container">
+                    <div class="row mt-5 justify-content-center text-center">
+                        <div class="col-lg-8 col-md-10">
+                            <h2>Registered Multicultural Food Exhibits</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center food-menu mb-5">
+                        <div class="col-md-5 mb-2">
+                            <div class="card">
+                                <div class="menu-card-img-top card1">
+                                    &nbsp;
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            "I've been Kiwied"<br />New Zealand
+                                            traditional recipes
+                                        </li>
+                                        <li class="list-group-item">
+                                            Nova Scotia Sweets and Treats<br />As
+                                            assortment of fish flavoured treats
+                                        </li>
+                                        <li class="list-group-item">
+                                            "Not Just Haggis and Scotch"<br />Other
+                                            Scottish foods
+                                        </li>
+                                        <li class="list-group-item">
+                                            "Hambriento?"<br />Staple Mexican
+                                            recipes
+                                        </li>
+                                        <li class="list-group-item">
+                                            "Aloha"<br />Hawaiian Favourites
+                                        </li>
+                                        <li class="list-group-item">
+                                            "Salt Fish, Jig's Dinner and
+                                            Toutons"<br />Discover Newfoundland
+                                            and Labrador
+                                        </li>
+                                        <li class="list-group-item">
+                                            "Les Pains de la France"<br />The
+                                            Best of French Bread and French
+                                            Toast
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mb-2">
+                            <div class="card">
+                                <div class="menu-card-img-top card2">
+                                    &nbsp;
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            "Mediterranean Bliss"<br />Mediterranean
+                                            recipes
+                                        </li>
+                                        <li class="list-group-item">
+                                            Mama's Italian Ice Cream<br />(try
+                                            the Pistachio, it’s the best!)
+                                        </li>
+                                        <li class="list-group-item">
+                                            "Les friandise Acadienne"<br />Acadian
+                                            sweets and desserts
+                                        </li>
+                                        <li class="list-group-item">
+                                            "It's all about Spice"<br />Traditional
+                                            Indian Foods
+                                        </li>
+                                        <li class="list-group-item">
+                                            "Sushi?"<br />An edible
+                                            demystification...
+                                        </li>
+                                        <li class="list-group-item">
+                                            Absolutely Sweden:<br />Tasty
+                                            Swedish Cuisine
+                                        </li>
+                                        <li class="list-group-item">
+                                            "Do you like it sour?"<br />Famous
+                                            sour soups of Romania<br /><br />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Menu Section -->
+
+                <!-- Schedule Section -->
+                <div class="container">
+                    <div class="row mt-5 justify-content-center text-center">
+                        <div class="col-lg-10 col-md-10">
+                            <h2>2018 Registered musical/dance participants:</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center schedule">
+                        <div class="col-md-5 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">August 10, 2022</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 6 pm
+                                            </div>
+                                            "Opening Ceremonies"
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 7 pm
+                                            </div>
+                                            "Beaut"<br />New Zealand rock group
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 8 pm
+                                            </div>
+                                            Bible Hill Dance<br />Multicultural
+                                            Interpretations
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 9 pm
+                                            </div>
+                                            TBA
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 10
+                                                pm
+                                            </div>
+                                            The O’Keefe's<br />Traditional Irish
+                                            Tunes
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">August 11, 2022</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 12
+                                                pm
+                                            </div>
+                                            Ukrainian Dance<br />"The Great
+                                            Easter Egg Mystery"
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 1 pm
+                                            </div>
+                                            Porter’s Lake Greek Orthodox Men’s
+                                            Choir
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 2 pm
+                                            </div>
+                                            TBA
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 3 pm
+                                            </div>
+                                            The Best of Garage<br />Truro’s
+                                            Favourite Loca
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="time">
+                                                <i class="bi bi-clock"></i> 4 pm
+                                            </div>
+                                            TBA<br /><br />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Schedule Section -->
+            </section>
+
+            <!-- volunteering section -->
+            <section id="volunteering" class="section volunteering">
+                <div class="container-fluid">
+                    <h1>
+                        Are you interested in volunteering? <br />
+                        Contact us!
+                    </h1>
+                    <h2>
+                        As we do each year, celebrate multiculturalism is
+                        looking for volunteers to help make this year’s festival
+                        a success. We need a whole team of volunteers, and all
+                        people are welcome. No one is expected to volunteer at
+                        the festival all four days and positions are available
+                        for each day. If you are interested, please browse our
+                        list of available volunteer positions and contact Joey
+                        Seth at
+                        <a
+                            id="contactEmail"
+                            href="mailto:j.seth@celebratemulticulturalism.org"
+                        >
+                            email
+                        </a>
+                        with a copy of your resume.
+                    </h2>
+                    <h3>
+                        Bonus: Free admission to the festival (a.k.a. Free
+                        Food!!)
+                    </h3>
+
+                    <div class="container volpositions">
+                        <h2 class="mx-2 px-1 my-4">
+                            Available Volunteer Positions
+                        </h2>
+
+                        <div class="row row-grid justify-content-between mb-4">
+                            <div class="col-lg-4 px-lg-4">
+                                <h5>Ticket Booth Operator</h5>
+                                <p>
+                                    We need trusty, customer service friendly
+                                    individuals who are handy with a calculator…
+                                    (I do know you exist!!) Sometimes it can get
+                                    lonely in the booth, so we always pair you
+                                    up with another volunteer – make sure to
+                                    bring lots of water!!
+                                </p>
+                            </div>
+                            <div class="col-lg-4 px-lg-4">
+                                <h5>First Aiders</h5>
+                                <p>
+                                    We are looking for certified volunteers who
+                                    would like to get some on the spot training
+                                    for minor cuts and bruises, heat exhaustion
+                                    and the occasional chopped off finger.
+                                    Standard First Aid is a minimum.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 px-lg-4">
+                                <h5>Security</h5>
+                                <p>
+                                    This isn’t necessarily a security position;
+                                    we just need individuals to monitor the
+                                    crowds at the park. Keeping an eye out for
+                                    pick pockets and vandals and any other
+                                    number of mischievous activities would be
+                                    your duties. Bonus: You get to carry around
+                                    a walkie talkie
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row row-grid justify-content-start">
+                            <div class="col-lg-4 px-lg-4">
+                                <h5>Ground Crew</h5>
+                                <p>
+                                    This job requires individuals who are
+                                    capable of doing heavy lifting: setting up
+                                    the stage and the tents requires a lot of
+                                    strength and energy. Still Interested?
+                                </p>
+                            </div>
+                            <div class="col-lg-4 px-lg-4">
+                                <h5>Beverage Vendors</h5>
+                                <p>
+                                    While there is a lot of food at the
+                                    festival, water and other beverages are
+                                    usually in short demand. Again, we need
+                                    customer service and juice knowledgeable
+                                    individuals to run these booths.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h4>Volunteering Registration form</h4>
+                        <form
+                            method="POST"
+                            action="https://christmasindex.ca/handler.php"
+                            class="table container"
+                        >
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="fullnamev"
+                                    >Full Name:</label
+                                >
+                                <input
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    type="text"
+                                    id="fullnamev"
+                                    name="Full_Name"
+                                    required
+                                />
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="cellnumberv"
+                                    >Cell Number:</label
+                                >
+                                <input
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    type="text"
+                                    id="cellnumberv"
+                                    name="Cell_Number"
+                                    required
+                                />
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="worknumberv"
+                                    >Work Number:</label
+                                >
+                                <input
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    type="text"
+                                    id="worknumberv"
+                                    name="Work_Number"
+                                />
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="emailv"
+                                    >Email:</label
+                                >
+                                <input
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    type="email"
+                                    id="emailv"
+                                    name="Email"
+                                    required
+                                />
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="positionsv"
+                                    >Available Volunteer Positions:</label
+                                >
+                                <select
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    name="Positions"
+                                    id="positionsv"
+                                    required
+                                >
+                                    <option selected value="">
+                                        Please select position
+                                    </option>
+                                    <option value="Ticket Booth Operator">
+                                        Ticket Booth Operator
+                                    </option>
+                                    <option value="First Aiders">
+                                        First Aiders
+                                    </option>
+                                    <option value="Security">Security</option>
+                                    <option value="Ground Crew">
+                                        Ground Crew
+                                    </option>
+                                    <option value="Beverage Vendors">
+                                        Beverage Vendors
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-12 col-md-3 col-lg-4">
+                                    Date(s) and Time(s) interested in
+                                    volunteering:
+                                </label>
+                                <div class="col-sm-12 col-md-9 col-lg-8">
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augustten"
+                                            class="form-check-input"
+                                            value="August 10th: 7pm – 10pm"
+                                            name="Date_Available10"
+                                        />
+                                        <label
+                                            for="augustten"
+                                            class="form-check-label"
+                                            >August 10th: 7pm – 10pm</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augusteleven"
+                                            class="form-check-input"
+                                            value="August 11th: 12pm – 10pm"
+                                            name="Date_Available11"
+                                        />
+                                        <label
+                                            for="augusteleven"
+                                            class="form-check-label"
+                                            >August 11th: 12pm – 10pm</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augusttwelve"
+                                            class="form-check-input"
+                                            value="August 12th: 12pm – 10pm"
+                                            name="Date_Available12"
+                                        />
+                                        <label
+                                            for="augusttwelve"
+                                            class="form-check-label"
+                                            >August 12th: 12pm – 10pm</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augustthirteen"
+                                            class="form-check-input"
+                                            value="August 13th: 1pm – 5pm"
+                                            name="Date_Available13"
+                                        />
+                                        <label
+                                            for="augustthirteen"
+                                            class="form-check-label"
+                                            >August 13th: 1pm – 5pm</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augustfourteen"
+                                            class="form-check-input"
+                                            value="August 14th: 1pm – 3pm"
+                                            name="Date_Available14"
+                                        />
+                                        <label
+                                            for="augustfourteen"
+                                            class="form-check-label"
+                                            >August 14th: 1pm – 3pm</label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="considerationsv"
+                                    >Special Considerations:</label
+                                >
+                                <textarea
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    id="considerationsv"
+                                    name="Special_Considerations"
+                                    cols="40"
+                                    rows="5"
+                                ></textarea>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-12 col-md-3 col-lg-4">
+                                    Equipment Needed:
+                                </label>
+                                <div class="col-sm-12 col-md-9 col-lg-8">
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="powerv"
+                                            class="form-check-input"
+                                            value="Power"
+                                            name="Equipment_Power"
+                                        />
+                                        <label
+                                            for="powerv"
+                                            class="form-check-label"
+                                            >Power</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="lightingv"
+                                            class="form-check-input"
+                                            value="Lighting"
+                                            name="Equipment_Lighting"
+                                        />
+                                        <label
+                                            for="lightingv"
+                                            class="form-check-label"
+                                            >Lighting</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="speakersv"
+                                            class="form-check-input"
+                                            value="Speakers"
+                                            name="Equipment_Speakers"
+                                        />
+                                        <label
+                                            for="speakersv"
+                                            class="form-check-label"
+                                            >Speakers</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="projectorv"
+                                            class="form-check-input"
+                                            value="Projector"
+                                            name="Equipment_Projector"
+                                        />
+                                        <label
+                                            for="projectorv"
+                                            class="form-check-label"
+                                            >Projector</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="wifiv"
+                                            class="form-check-input"
+                                            value="WiFi"
+                                            name="Equipment_WiFi"
+                                        />
+                                        <label
+                                            for="wifiv"
+                                            class="form-check-label"
+                                            >WiFi</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="tablev"
+                                            class="form-check-input"
+                                            value="Table"
+                                            name="Equipment_Table"
+                                        />
+                                        <label
+                                            for="tablev"
+                                            class="form-check-label"
+                                            >Table</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="signagev"
+                                            class="form-check-input"
+                                            value="Signage"
+                                            name="Equipment_Signage"
+                                        />
+                                        <label
+                                            for="signagev"
+                                            class="form-check-label"
+                                            >Signage</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label
+                                            for="otherv"
+                                            class="form-check-label"
+                                            >Other</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="otherv"
+                                            class="form-text-input"
+                                            value=""
+                                            name="Equipment_Other"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6"></div>
+                                <div class="col">
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                    >
+                                        Submit
+                                    </button>
+                                    <button
+                                        type="reset"
+                                        class="btn btn-secondary"
+                                    >
+                                        Reset
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- contact section -->
+            <section id="contact" class="section contact">
+                <div class="container-fluid">
+                    <h1>
+                        Are you interested in participating? <br />
+                        Contact us!
+                    </h1>
+                    <h2>
+                        Celebrate multiculturalism invites any new entries
+                        interested in participating in the festival to register
+                        with our festival co-ordinator, Jesse Shaw. All entries
+                        wishing to participate in the festival need to fill out
+                        our registration form (see attached), which you then can
+                        mail or drop off to our office. If you have any
+                        questions regarding registration, would be more than
+                        happy to help you. You can reach Jesse by
+                        <a
+                            id="contactEmailc"
+                            href="mailto:j.shaw@celebratemulticulturalism.org"
+                        >
+                            email
+                        </a>
+                        or 899-5129. Please fill out the registration form
+                        below:
+                    </h2>
+
+                    <div class="container">
+                        <h4>Participant Registration form</h4>
+                        <form
+                            method="POST"
+                            action="https://christmasindex.ca/handler.php"
+                            class="mb-4 table container"
+                        >
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="groupname"
+                                    >Name of Group:</label
+                                >
+                                <input
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    type="text"
+                                    id="groupname"
+                                    name="Group_Name"
+                                    required
+                                />
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="fullname"
+                                    >Name of Contact Person:</label
+                                >
+                                <input
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    type="text"
+                                    id="fullname"
+                                    name="Full_Name"
+                                />
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="cellnumber"
+                                    >Cell Number:</label
+                                >
+                                <input
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    type="text"
+                                    id="cellnumber"
+                                    name="Cell_Number"
+                                />
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="worknumber"
+                                    >Work Number:</label
+                                >
+                                <input
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    type="text"
+                                    id="worknumber"
+                                    name="Work_Number"
+                                />
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="email"
+                                    >Email:</label
+                                >
+                                <input
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    type="email"
+                                    id="email"
+                                    name="Email"
+                                />
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="groupdescription"
+                                    >Group Description:</label
+                                >
+                                <textarea
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    id="groupdescription"
+                                    name="Group_Description"
+                                    cols="40"
+                                    rows="5"
+                                ></textarea>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-12 col-md-3 col-lg-4">
+                                    Date(s) and Time(s) interested in
+                                    participating:
+                                </label>
+                                <div class="col-sm-12 col-md-9 col-lg-8">
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augustten_1"
+                                            class="form-check-input"
+                                            value="August 10th: 7pm – 10pm"
+                                            name="Date_Available10"
+                                        />
+                                        <label
+                                            for="augustten_1"
+                                            class="form-check-label"
+                                            >August 10th: 7pm – 10pm</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augusteleven_1"
+                                            class="form-check-input"
+                                            value="August 11th: 12pm – 10pm"
+                                            name="Date_Available11"
+                                        />
+                                        <label
+                                            for="augusteleven_1"
+                                            class="form-check-label"
+                                            >August 11th: 12pm – 10pm</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augusttwelve_1"
+                                            class="form-check-input"
+                                            value="August 12th: 12pm – 10pm"
+                                            name="Date_Available12"
+                                        />
+                                        <label
+                                            for="augusttwelve_1"
+                                            class="form-check-label"
+                                            >August 12th: 12pm – 10pm</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augustthirteen_1"
+                                            class="form-check-input"
+                                            value="August 13th: 1pm – 5pm"
+                                            name="Date_Available13"
+                                        />
+                                        <label
+                                            for="augustthirteen_1"
+                                            class="form-check-label"
+                                            >August 13th: 1pm – 5pm</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="augustfourteen_1"
+                                            class="form-check-input"
+                                            value="August 14th: 1pm – 3pm"
+                                            name="Date_Available14"
+                                        />
+                                        <label
+                                            for="augustfourteen_1"
+                                            class="form-check-label"
+                                            >August 14th: 1pm – 3pm</label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label
+                                    class="col-sm-12 col-md-3 col-lg-4"
+                                    for="considerations"
+                                    >Special Considerations:</label
+                                >
+                                <textarea
+                                    class="col-sm-12 col-md-9 col-lg-8"
+                                    id="considerations"
+                                    name="Special_Considerations"
+                                    cols="40"
+                                    rows="5"
+                                ></textarea>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-12 col-md-3 col-lg-4">
+                                    Equipment Needed:
+                                </label>
+                                <div class="col-sm-12 col-md-9 col-lg-8">
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="powerv_1"
+                                            class="form-check-input"
+                                            value="Power"
+                                            name="Equipment_Power"
+                                        />
+                                        <label
+                                            for="powerv_1"
+                                            class="form-check-label"
+                                            >Power</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="lightingv_1"
+                                            class="form-check-input"
+                                            value="Lighting"
+                                            name="Equipment_Lighting"
+                                        />
+                                        <label
+                                            for="lightingv_1"
+                                            class="form-check-label"
+                                            >Lighting</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="speakersv_1"
+                                            class="form-check-input"
+                                            value="Speakers"
+                                            name="Equipment_Speakers"
+                                        />
+                                        <label
+                                            for="speakersv_1"
+                                            class="form-check-label"
+                                            >Speakers</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="projectorv_1"
+                                            class="form-check-input"
+                                            value="Projector"
+                                            name="Equipment_Projector"
+                                        />
+                                        <label
+                                            for="projectorv_1"
+                                            class="form-check-label"
+                                            >Projector</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="wifiv_1"
+                                            class="form-check-input"
+                                            value="WiFi"
+                                            name="Equipment_WiFi"
+                                        />
+                                        <label
+                                            for="wifiv_1"
+                                            class="form-check-label"
+                                            >WiFi</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="tablev_1"
+                                            class="form-check-input"
+                                            value="Table"
+                                            name="Equipment_Table"
+                                        />
+                                        <label
+                                            for="tablev_1"
+                                            class="form-check-label"
+                                            >Table</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            type="checkbox"
+                                            id="signagev_1"
+                                            class="form-check-input"
+                                            value="Signage"
+                                            name="Equipment_Signage"
+                                        />
+                                        <label
+                                            for="signagev_1"
+                                            class="form-check-label"
+                                            >Signage</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label
+                                            for="otherv_1"
+                                            class="form-check-label"
+                                            >Other</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="otherv_1"
+                                            class="form-text-input"
+                                            value=""
+                                            name="Equipment_Other"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6"></div>
+                                <div class="col">
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                    >
+                                        Submit
+                                    </button>
+                                    <button
+                                        type="reset"
+                                        class="btn btn-secondary"
+                                    >
+                                        Reset
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div>
+                    <h3>
+                        Jesse Shaw Celebrate Multiculturalism 2022 Registration
+                        47 Prince Street Truro, Nova Scotia B2N 4Q7
+                    </h3>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
